@@ -33,3 +33,11 @@ build: vet
 run: build
 	@./$(shell basename $(CURDIR))
 .PHONY:run
+
+docker-build:
+	@docker build -t math_server:latest .
+.PHONY:docker-build
+
+docker-run:
+	@docker run -p 8080:8080 math_server:latest
+.PHONY:docker-run
