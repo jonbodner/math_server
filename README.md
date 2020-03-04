@@ -1,8 +1,8 @@
-= math_server
+# math_server
 
 A  simple server for testing an upcoming project
 
-== How to build
+## How to build
 
 `make build`
 
@@ -10,7 +10,7 @@ or if you want to make a docker container:
 
 `make docker-build`
 
-== How to run
+## How to run
 
 `./math_server -port=9090`
 
@@ -24,7 +24,7 @@ Launches the server on port 8080. To customize the port:
 
 `docker run -p 9090:9090 math_server:latest -port 9090`
 
-== API
+## API
 
 There's a single query parameter `expression` that expects an arithmetic expression. `(`, `)`, `+`, `-`, `*`, and `/` are supported.
 Order of operations is respected.
