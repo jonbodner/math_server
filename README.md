@@ -34,6 +34,7 @@ If the expression is invalid, an error message is returned with a 400 status cod
 From the command line:
 
 `curl -G --data-urlencode "expression= ( 2 + 2 ) * -10" localhost:8080`
+
 `curl -G --data-urlencode "expression= 2 + 2 * -10" localhost:8080`
 
 
